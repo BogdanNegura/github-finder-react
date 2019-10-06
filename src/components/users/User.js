@@ -7,9 +7,26 @@ export class User extends Component {
     }
 
     render() {
+
+        const {
+            name,
+            avatar_url,
+            location,
+            bio,
+            login,
+            html_url,
+            followers,
+            following,
+            public_repos,
+            public_gists,
+            hireable
+        } = this.props.user;
+
+        const { loading } = this.props;
+
         return (
             <div>
-                User
+                {name}
             </div>
         )
     }
